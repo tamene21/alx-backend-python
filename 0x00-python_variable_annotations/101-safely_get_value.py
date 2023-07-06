@@ -8,7 +8,7 @@ Res = Union[Any, T]
 Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, key: Any, default: def = None):
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """retrive a value from a list"""
     if key in dct:
         return dct[key]
