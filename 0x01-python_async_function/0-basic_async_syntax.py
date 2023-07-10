@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """an async that takes an int argument"""
-
-
 import asyncio
 import random
 
