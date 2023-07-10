@@ -10,7 +10,9 @@ from time import perf_counter
 
 
 wait_n = __import__('1-concurrent_coroutines').wait_n
-asynic def measure_time(n: int, max_delay: int) -> float:
+
+
+def measure_time(n: int, max_delay: int) -> float:
     """measures time of async time
     Args:
       n (int): times
@@ -20,5 +22,5 @@ asynic def measure_time(n: int, max_delay: int) -> float:
     """
     counter = perf_counter()
     asynico.run(wait_n(n, max_delay))
-    result = perf.counter() - counter
+    result = perf_counter() - counter
     return result
