@@ -4,7 +4,7 @@ Measuring the runtime
 
 """
 
-import asynico
+import asyncio
 import random
 from time import perf_counter
 
@@ -21,6 +21,6 @@ def measure_time(n: int, max_delay: int) -> float:
       float: result
     """
     counter = perf_counter()
-    asynico.run(wait_n(n, max_delay))
+    asyncio.run(wait_n(n, max_delay))
     result = perf_counter() - counter
     return result
