@@ -8,5 +8,5 @@ from typing import Generator
 async def async_generator() -> Generator[float, None, None]:
     """ Generates 10 times"""
     for _ in range(10):
-        await asyncio.asleep(1)
+        await asyncio.sleep(1)
         yield random.random() * 10
